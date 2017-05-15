@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml', '~> 5.0', '>= 5.0.1'
 gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2', '>= 4.2.1'
+gem 'normalize-rails'
 
 
 group :development, :test do

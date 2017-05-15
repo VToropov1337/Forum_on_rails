@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require normalize-rails
  *= require_tree .
  *= require_self
  */
@@ -17,7 +18,7 @@
 
  body {
 	font-family: 'Ubuntu', sans-serif;
-	background-color: #EFE;
+	background-color: grey;
  }
 
 
@@ -39,10 +40,10 @@
  }
 
  .main_header {
- 	width: 80%;
+ 	width: 100%;
  	max-width: 1140 px;
  	margin: 0 auto;
- 	background: white;
+ 	
  	#logo {
  		float: left;
  		p {
@@ -56,6 +57,40 @@
  	#buttons {
  		float: right;
  	}
+} 	
+#posts {
+	padding: 2em 1%;
+	.post {
+		margin: 1em 0;
+		padding: 1em 0;
+		border-bottom: 1px solid #D1d1d1;
+		.title {
+			margin: 0;
+			a {
+				color: #397CAC;
+				text-decoration: none;	
+				font-weight: 100;
+				font-size: 1.25rem;
+			}
+		}
+		.date {
+			margin-top: .25rem;
+			font-size: 0.9rem;
+			color: #B2BAC2;
+		}
+	}
+}
 
- }
-
+#post_content {
+	background: white;
+	padding: 2em 5%;
+	border-radius: .5em;
+	h1 {
+		font-size: 2em;
+		margin-top: 0;
+		color: #397CAC;
+		text-decoration: none;	
+		font-weight: 100;
+		font-size: 1.25rem;
+	}
+}
