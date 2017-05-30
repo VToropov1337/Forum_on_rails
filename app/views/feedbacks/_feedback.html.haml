@@ -1,2 +1,5 @@
 #comment
   %p= feedback.answer
+  %p= feedback.user.email
+  = link_to "Delete", [feedback.post, feedback], method: :delete, data: { confirm: "Are you sure?" }
+  = link_to "Edit", edit_post_feedback_path(feedback.post, feedback)
